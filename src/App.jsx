@@ -2,12 +2,13 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home";
 import Red from "./components/Red";
 import Blue from "./components/Blue";
+import Lost from "./components/Lost";
 
 function App() {
   return (
     <>
       <div id="container">
-        <h1 className="HeaderName">Hello React Router!</h1>
+        <h1 className="header-name">Hello React Router!</h1>
         <div id="navbar">
           <Link to="/">
             <h1>Home</h1>
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/blue" element={<Blue />} />
             <Route path="/red" element={<Red />} />
+            <Route path="*" element={<Lost />} />
           </Routes>
         </div>
       </div>

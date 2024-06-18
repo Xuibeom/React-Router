@@ -41,8 +41,28 @@ body > div {
   background-color: #275db3;
   color: white;
 }
-.HeaderName {
+.header-name {
   text-align: center;
   padding: 10px;
   border: 1px solid black;
+}
+.lost {
+  flex-direction: column;
+}
+.back-button {
+  border: none;
+  color: black;
+  background-color: #008cba;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.back-button:hover {
+  background-color: #275db3;
+  color: white;
 }
